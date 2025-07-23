@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdimajid Gedi | Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #4FC3F7;
+      --background-color: #121212;
+      --container-color: #1e1e1e;
+      --text-color: #ffffff;
+      --muted-color: #aaaaaa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .profile-container {
+      background-color: var(--container-color);
+      padding: 40px 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: #333;
+      background-image: url('profilepic.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto 20px auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--muted-color);
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    .section ul li::before {
+      content: '•';
+      color: var(--primary-color);
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .section p, .section ul li {
+      color: var(--text-color);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact p {
+      color: var(--muted-color);
+      margin-bottom: 5px;
+    }
+
+    .contact a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
+    .projects {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .projects h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 300px;
+      box-shadow: 0 0 12px rgba(0, 170, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      color: var(--primary-color);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile-container {
+        padding: 20px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+      }
+
+      .section h2 {
+        font-size: 1.1rem;
+      }
+
+      .section p, .section ul li {
+        font-size: 0.95rem;
+      }
+
+      .social-links a {
+        font-size: 1rem;
+      }
+
+      .project-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-pic"></div>
+    <h1>Abdimajid Gedi</h1>
+    <p class="tagline">Student | Developer | Ethical Hacker | Penetration Tester</p>
+
+    <div class="section about">
+      <h2>About Me</h2>
+      <p>I am a student at Zetech University, currently pursuing a Diploma in Information Technology. I’m also attached at the Ministry of ICT Kenya. I enjoy solving tech problems, building apps, developing software, and more.</p>
+    </div>
+
+    <div class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Web Development (HTML, CSS, JavaScript, Python)</li>
+        <li>Java Programming</li>
+        <li>System Documentation</li>
+        <li>Ethical Hacking (Beginner)</li>
+        <li>Teamwork & Communication</li>
+      </ul>
+    </div>
+
+    <div class="section interests">
+      <h2>Hobbies & Interests</h2>
+      <p>Football, Coding, Ethical Hacking, Content Creation, Video Editing</p>
+    </div>
+
+    <div class="section contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:abdimajidismail15@gmail.com">abdimajidismail15@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254725242972">+254 725 242 972</a></p>
+      <p>Location: Teleposta Towers, Nairobi, Kenya</p>
+    </div>
+
+    <div class="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Step Counter App</h3>
+          <p>An Android app that tracks your daily steps, allows goal setting, and sends motivational reminders.</p>
+          <a href="https://www.mypacer.com/" target="_blank">Check it out</a>
+        </div>
+        <div class="project-card">
+          <h3>Muslims Matchmaker</h3>
+          <p>A dating platform designed for Muslims to connect for marriage, with privacy and Islamic values.</p>
+          <a href="https://www.salams.app/" target="_blank">Check it out</a>
+        </div>
+        <div class="project-card">
+          <h3>Liwo Islamic Center Website</h3>
+          <p>A responsive mosque website built for Langata mosque, inspired by Jamia Mosque Nairobi.</p>
+          <a href="https://langataislamiccenter.org/" target="_blank">Check it out</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section social">
+      <h2>Social Media</h2>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/a__majiid" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Abdimajiid10" target="_blank">GitHub</a>
+        <a href="https://instagram.com/a__majiid" target="_blank">Instagram</a>
+        <a href="https://x.com/a__majiid" target="_blank">X</a>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Abdimajiid Gedi. All rights reserved.</footer>
+  </div>
+</body>
+</html>
